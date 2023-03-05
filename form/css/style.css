@@ -10,6 +10,9 @@
     padding: 0;
 }
 
+body {
+    background-color: #121f8f;
+}
 /* Elementos com o ID "titulo" */
 #titulo {
     font-family: Arial, Helvetica, sans-serif;
@@ -85,7 +88,7 @@ fieldset.grupo .campo {
 
 /* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
 .campo input[type="text"],
-.campo input[type="pass"],
+.campo input[type="password"],
 .campo textarea {
     padding: 0.2em;
     border: 1px solid var(--primary-color);
@@ -107,9 +110,6 @@ fieldset.grupo .campo {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-
 }
 
 .botao {
@@ -129,4 +129,10 @@ fieldset.grupo .campo {
 a {
   text-decoration: none;
   color: var(--white);
+}
+
+#check {
+    display: flex;
+    justify-content: center;
+
 }
