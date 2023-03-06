@@ -1,50 +1,69 @@
-*{
+:root {
+  --primary: #1badc6;
+}
+
+* {
   margin: 0;
+  font-family: 'Nunito';
+  scroll-behavior: smooth;
+}
+
+#block p {
+  font-size: medium;
+  color: white;
+}
+
+#block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
 }
 
 .cabecalho {
-  display:flex;
+  display: flex;
   flex-direction: row;
-  background-color:#1badc6 ;
+  background-color: #1badc6;
   height: 100px;
   justify-content: space-evenly;
   align-items: center;
-  
+
 }
+
 #logosite {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
 }
 
 #alfineteloc {
-  display: flex;
-  flex-direction: column;
   width: 25px;
   height: 25px;
-  
+  margin-right: 10px;
 }
 
 #pesquisar {
   height: 35px;
   width: 450px;
+  margin-right: 10px;
 
 }
 
 #lupa {
   height: 25px;
   width: 25px;
-  
+
 }
 
 #perfil {
   height: 25px;
   width: 25px;
+  margin-right: 10px;
 }
 
 #favoritos {
   height: 25px;
   width: 25px;
-
+  margin-right: 15px;
 }
 
 #compra {
@@ -52,39 +71,45 @@
   width: 25px;
 }
 
+.promocao {
+  display: flex;
+  justify-content: center;
+}
+
 #promocao {
+  display: flex;
+  justify-content: center;
   margin-top: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-  height: 272px;
-  width: 1505px;
+  height: 270px;
+  width: 1310px;
 }
 
 #ticket {
-  width:  175px;
+  width: 175px;
   height: 175px;
 }
 
 #trucker {
-  width:  175px;
+  width: 175px;
   height: 175px;
 }
 
 #phone {
-  width:  175px;
+  width: 175px;
   height: 175px;
 }
 
 #icon {
   display: flex;
   flex-direction: row;
-  margin-top: 25px;
-  margin-bottom: 75px;
+  margin-top: 75px;
+  margin-bottom: 100px;
   justify-content: space-evenly;
-  font-size:larger;
+  font-size: larger;
 }
-#teste{
-  margin-left:10%;
+
+#teste {
+  margin-left: 10%;
 }
 
 .anuncio {
@@ -92,89 +117,84 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
-#celular1 {
+
+#celular {
   background-color: #f8f4f4;
   width: 290px;
   height: 290px;
   border-radius: 1em;
+}
+
+#celular:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #iphone {
-  margin-top: 15px;
-  margin-left: 25px;
   width: 175px;
   height: 175px;
-  
 }
 
-#celular2{
-  background-color: #f8f4f4;
-  width: 290px;
-  height: 290px;
-  border-radius: 1em;
-}
-#a50 {
-  margin-top: 15px;
-  margin-left: 25px;
+#a50 { 
   width: 180px;
   height: 180px;
 }
 
-#celular3{
-  background-color: #f8f4f4;
-  width: 290px;
-  height: 290px;
-  border-radius: 1em; 
-}
-
 #xiaomi {
-  margin-top: 15px;
-  margin-left: 25px;
   width: 175px;
   height: 175px;
-
 }
 
 #descricao {
-  margin-left: 25px;
-  margin-bottom: 10px;
-}
-
-#text{
   margin-left: 30px;
   margin-bottom: 10px;
+  font-size: medium;
+  font-weight: bold;
 }
 
-#description {
+#a-price {
   margin-left: 30px;
-  margin-bottom: 10px;
+  font-size: small;
 }
 
-footer{
-  background-color: #1badc6;
-  width: 1658px;
-  height: 140px;
-  bottom: 0;
-  z-index: 999;
+#b-price {
+  margin-left: 30px;
+  font-size: small;
+  text-decoration: line-through;
 }
 
-
-#imgrdp {
+footer {
+  position: sticky;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  width: 150px;
-  height: 150px;
-}
-.footer-link {
-    color: var(--white);
-    margin-top: 75px;
-    align-items:center;
-    justify-content: center;
-    text-align: center;
+  margin-top: 150px;
+  background-color: var(--primary);
+  width: 100%;
+  height: 190px;
 }
 
-#textordp {
-  margin-top: 15px;
+#logo {
+  width: 140px;
+  margin-left: 20px;
 }
 
+#footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 450px;
+}
+
+#footer-label {
+  color: white;
+}
