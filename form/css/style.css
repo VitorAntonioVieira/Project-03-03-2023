@@ -1,138 +1,106 @@
 :root {
-    --primary-color: #1badc6;
-    --white: #fff;
-    --black: #000;
+    --primary: #1badc6;
 }
 
-/* Todos os elementos da página */
 * {
     margin: 0;
     padding: 0;
+
 }
 
 body {
-    background-color: #121f8f;
-}
-/* Elementos com o ID "titulo" */
-#titulo {
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--black);
-    margin-left: 16%;
+    background: url("../img/background.jpg");
+    font-family: 'Nunito';
 }
 
 form {
-    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    height: 400px;
 }
 
-/* Elementos de tag <fieldset>*/
 fieldset {
-    border: 0;
-}
-
-/* Elemento de tag <body> */
-body {
-    background-color: var(--white);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    color: var(--black);
     margin-top: 100px;
-    margin-left: 36.5%;
-}
-
-/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
-input,
-textarea {
-    font-family: sans-serif;
-    font-size: 1em;
-    color: var(--primary-color);
-    border-radius: 5px;
-    width: 200px;
-}
-
-button {
-    font-family: sans-serif;
-    font-size: 1em;
-    color: var(--primary-color);
-    border-radius: 5px;
-    width: 100px;
-}
-
-/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
-.grupo:before,
-.grupo:after {
-    display: table;
-}
-
-/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
-.grupo:after {
-    clear: both;
-}
-
-/* Elementos de classe "campo" */
-.campo {
-    margin-bottom: 1em;
-}
-
-/* Elementos de classe "campo" de tag <label> */
-.campo label {
-    margin-bottom: 0.2em;
-    color: var(--primary-color);
-    display: block;
-}
-
-/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
-fieldset.grupo .campo {
-    float: left;
-    margin-right: 1em;
-}
-
-/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
-.campo input[type="text"],
-.campo input[type="password"],
-.campo textarea {
-    padding: 0.2em;
-    border: 1px solid var(--primary-color);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    display: block;
-}
-
-/* Elementos de classe "campo" de tag <select> e <option>*/
-/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
-/* Elemento de classe "botao" */
-.botao {
-    font-size: 1.2em;
-    background: var(--primary-color);
-    border: 0;
-    margin-bottom: 1em;
-    color: #000;
-    padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
-.botao {
-    text-decoration: none;
-    cursor: pointer;
-
-}
-
-/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
-.botao:hover {
-    background-color: #54b4c5;
-    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
-    text-shadow: none;
-
+    width: 300px;
+    height: 450px;
+    border-color: var(--primary);
+    border-style: dashed;
+    border-radius: 1em;
+    background-color: var(--primary);
 }
 
 a {
-  text-decoration: none;
-  color: var(--white);
+    text-decoration: none;
+    font-size: x-large;
+    color: var(--primary);
+}
+
+a:hover {
+    color: white;
+}
+
+#nome, #pass {
+    width: 260px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: white;
+    border-style: none;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#titulo {
+    color: white;
+}
+
+#imgtitulo{
+    width: 70px;
+    height: 70px;
+    margin-left: -60px;
+}
+
+.campo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 #check {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
 
+#memoria1 {
+    margin-right: 10px;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.botao {
+    padding: 5px;
+    background-color: white;
+    width: 90px;
+    height: 40px;
+    border-radius: 4px;
+    border-color: white;
+    border-style: none;
+}
+
+.botao:hover {
+    background-color: rgba(255, 255, 255, 0.479);
+}
+
+#label {
+    color: white;
 }
