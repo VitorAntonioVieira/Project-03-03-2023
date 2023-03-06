@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+#card {
+    width: 800px;
+    height: 800px;
+}
