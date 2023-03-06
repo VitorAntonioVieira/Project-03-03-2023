@@ -16,7 +16,6 @@ a {
 a:hover{
   background-color: white;
   border-radius: 5px;
-  transition: color 0.3s, linear 0.3s;
 }
 
 #block p {
@@ -25,7 +24,7 @@ a:hover{
   padding: 5px;
 }
 
-#block p:hover {
+#block a p:hover {
   font-size: medium;
   color: var(--primary);
 }
@@ -146,6 +145,7 @@ a:hover{
   width: 290px;
   height: 290px;
   border-radius: 1em;
+  transition: 0.8s ease;
 }
 
 #celular:hover {
@@ -180,19 +180,23 @@ a:hover{
 #descricao {
   margin-left: 30px;
   margin-bottom: 10px;
+  width: 80%;
   font-size: medium;
   font-weight: bold;
+  color: white;
 }
 
 #a-price {
   margin-left: 30px;
   font-size: small;
+  color: white;
 }
 
 #b-price {
   margin-left: 30px;
   font-size: small;
   text-decoration: line-through;
+  color: white;
 }
 
 footer {
