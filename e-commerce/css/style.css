@@ -88,6 +88,11 @@ a:hover{
   width: 25px;
 }
 
+#blog {
+  height: 25px;
+  width: 25px;
+  
+}
 .promocao {
   display: flex;
   justify-content: center;
