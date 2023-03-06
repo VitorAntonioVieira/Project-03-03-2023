@@ -48,14 +48,8 @@ a:hover {
 }
 
 #card {
-<<<<<<< HEAD
     width: 800px;
     height: 800px;
-=======
-  width: 800px;
-  height: 600px;
-  background-color: var(--primary);
->>>>>>> 02ed4b8a16a99702cab09e7b94920c8e40696542
 }
 
 .cabecalho {
