@@ -1,5 +1,4 @@
 :root {
-<<<<<<< HEAD
     --primary: #1badc6;
   }
   
@@ -36,46 +35,6 @@
     justify-content: space-between;
     width: auto;
     padding: 5px;
-  }
-  
-=======
-  --primary: #1badc6;
-}
-
->>>>>>> 7e60c54fc988220cb1d40397d82d0ace7a3b9f60
-* {
-  margin: 0;
-  font-family: 'Nunito';
-  scroll-behavior: smooth;
-}
-
-a {
-  text-decoration: none;
-  transition: color 0.3s linear 0.3s;
-}
-
-a:hover {
-  background-color: white;
-  border-radius: 5px;
-}
-
-#block p {
-  font-size: medium;
-  color: white;
-  padding: 5px;
-}
-
-#block a p:hover {
-  font-size: medium;
-  color: var(--primary);
-}
-
-#block {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: auto;
-  padding: 5px;
 }
 
 .content {
@@ -98,7 +57,6 @@ a:hover {
 }
 
 #logosite {
-<<<<<<< HEAD
     width: 90px;
     height: 90px;
   }
@@ -196,7 +154,8 @@ footer {
   #footer-label {
     color: white;
   }
-=======
+
+.logosite {
   width: 90px;
   height: 90px;
 }
@@ -241,4 +200,4 @@ footer {
   height: 25px;
   width: 25px;
 }
->>>>>>> 7e60c54fc988220cb1d40397d82d0ace7a3b9f60
+
